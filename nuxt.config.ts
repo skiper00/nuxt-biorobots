@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
 
-  css: ['~/app/styles/main.css',],
+  css: ['~/app/styles/main.css'],
 
   vite: {
     plugins: [
@@ -22,7 +22,6 @@ components: {
       { path: '~/widgets', pathPrefix: false, },
       { path: '~/features', pathPrefix: false, },
       { path: '~/shared', pathPrefix: false, },
-      { path: '~/pages', pathPrefix: false, },
       { path: '~/entities', pathPrefix: false, },
     ],
   },
