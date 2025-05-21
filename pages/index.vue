@@ -1,10 +1,13 @@
 <template>
-    <div class="bg-[#202529] pt-[48px] h-screen">
-        <div class="max-w-[1920px] mx-auto">
-            <Header class="mb-[120px] px-[212px] flex justify-between header"/>
+    <div class="bg-[#202529] pt-[48px] h-screen overflow-hidden">
+        <div class="max-w-[1920px] pb-[192px] mx-auto h-full overflow-x-hidden">
+            <Header class="mb-[120px] px-[212px] flex justify-between header" />
             <div class="max-w-[1016px] mx-auto sections">
-            <HeroSection class="mb-[124px]"/>
-            <CryptocurrencyWallet />
+                <HeroSection class="mb-[124px]" />
+                <CryptocurrencyWallet class="mb-[100px]"/>
+                <MarketSection />
+                <WareHouse />
+                <BioRobotProducePanel />
             </div>
         </div>
     </div>
@@ -16,12 +19,33 @@
 
 
 <style>
-@media (min-width: 1024px) and (max-width:1919px){
-.header{
-    padding: 0 134px 0 134px;
+@media (min-width: 1024px) and (max-width:1919px) {
+    .header {
+        padding: 0 134px 0 134px;
+    }
+
+    .sections {
+        padding: 0 134px 0 134px;
+    }
 }
-.sections{
-    padding: 0 134px 0 134px;
+
+@media (min-width:768px) and (max-width:1023px) {
+    .header {
+        padding: 0 136px 0 136px;
+    }
+
+    .sections {
+        padding: 0 136px 0 136px;
+    }
 }
+
+@media (min-width:320px) and (max-width:767px) {
+    .header {
+        padding: 0 42px 0 42px;
+    }
+
+    .sections {
+        padding: 0 42px 0 42px;
+    }
 }
 </style>

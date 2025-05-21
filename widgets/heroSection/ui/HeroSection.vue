@@ -1,13 +1,24 @@
 <template>
-    <div class="flex items-center justify-between">
+    <div class="hero-section flex items-center justify-between">
         <div class="">
-        <HeroTitle />
-        <HeroSubtitle />
+        <HeroTitle class="hero-title"/>
+        <HeroSubtitle class="subtitle"/>
         </div>
         <HeroImage />
     </div>
 </template>
 
-<script lang="ts" setup>
+<style scoped>
+@media(min-width:320px) and (max-width:767px){
+.subtitle{
+    display: none;
+}
+.hero-section{
+    flex-direction: column-reverse;
+}
+.hero-title {
+    margin-top: 30px;
+}
+}
 
-</script>
+</style>

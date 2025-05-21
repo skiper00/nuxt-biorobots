@@ -11,4 +11,10 @@
         font-size:18px
     }
 }
+@media (min-width:768px) and (max-width:1023px) {
+    .subtitle{
+        font-size: 14px;
+    }
+}
+
 </style>

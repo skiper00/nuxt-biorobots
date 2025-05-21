@@ -1,6 +1,7 @@
 <template>
     <div>
-
+        <MarketTitle />
+        <MarketCards class="mb-[100px]"/>
     </div>
 </template>
 
