@@ -2,7 +2,7 @@
     <div class="bg-[#202529] pt-[48px] h-screen overflow-hidden">
         <div class="max-w-[1920px] pb-[192px] mx-auto h-full overflow-x-hidden">
             <Header class="mb-[120px] px-[212px] flex justify-between header" />
-            <div class="max-w-[1016px] mx-auto sections">
+            <div class="mx-auto max-w-[1016px] sections">
                 <HeroSection class="mb-[124px]" />
                 <CryptocurrencyWallet class="mb-[100px]"/>
                 <MarketSection />

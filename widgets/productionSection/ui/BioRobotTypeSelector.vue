@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="text-white text-lg mb-4 mt-[30px]">Тип биоробота:</h3>
+        <h3 class="text-white text-lg mb-4">Тип биоробота:</h3>
         <div class="flex">
             <label class="flex items-center gap-2">
                 <input type="radio" name="bioType" value="male" class="custom-radio hidden" />

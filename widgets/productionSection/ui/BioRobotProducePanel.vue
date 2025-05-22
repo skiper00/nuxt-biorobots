@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PoroduceTitle class="mt-[100px]"/>
+        <ProduceTitle class="mt-[100px]"/>
         <ProductionSection />
     </div>
 </template>

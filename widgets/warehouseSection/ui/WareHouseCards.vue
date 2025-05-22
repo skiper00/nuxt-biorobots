@@ -51,7 +51,7 @@
     color: #7CDAF9;
     border-radius: 60px;
 }
-/* rgba(30, 84, 102, 1); */
+
 .button-gradient:hover {
     background-color: #7CDAF9;
     border-color: transparent;

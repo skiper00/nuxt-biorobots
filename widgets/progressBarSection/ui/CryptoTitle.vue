@@ -1,5 +1,5 @@
 <template>
-    <div class="crypto-title mb-10">
+    <div class="crypto-title mb-8">
         <h2 class="title text-white font-semibold text-[32px]">Кошелёк криптовалют</h2>
     </div>
 </template>

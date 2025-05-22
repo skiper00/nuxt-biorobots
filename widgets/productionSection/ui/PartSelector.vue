@@ -1,36 +1,40 @@
 <template>
     <div class="grid-wrapper">
 
-        <div class="grid-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Group_18"></div>
         </div>
-        <div class="grid-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
+            <div class="sprite bg-Group_18"></div>
+        </div>
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Subtract"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+            <p class="text-white text-[20px] font-semibold "></p>
         </div>
-        <div class="grid-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
+            <div class="sprite bg-Subtract_1"></div>
+            <p class="text-white text-[20px] font-semibold"></p>
+        </div>
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Subtract_2"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+            <p class="text-white text-[20px] font-semibold"></p>
         </div>
 
-    
-        <div class="grid-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Vector"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+            <p class="text-white text-[20px] font-semibold"></p>
         </div>
-        <div class="grid-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Vector_1"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+            <p class="text-white text-[20px] font-semibold"></p>
         </div>
-        <div class="grid-item flex flex-col items-center">
-            <div class="sprite bg-Vector_2"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+        <div class="flex flex-col items-center">
+            <div class="sprite bg-Vector_1"></div>
+            <p class="text-white text-[20px] font-semibold"></p>
         </div>
-
-
-        <div class="grid-item center-item flex flex-col items-center">
+        <div class="flex flex-col items-center">
             <div class="sprite bg-Vector_2"></div>
-            <p class="text-white text-[20px] font-semibold mt-6"></p>
+            <p class="text-white text-[20px] font-semibold"></p>
         </div>
     </div>
 </template>
@@ -42,55 +46,56 @@
 <style scoped>
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px
 }
 
 .sprite {
-    background-image: url('~/assets\images\css_sprites (3).png');
+    background-image: url('~/assets/images/css_sprites (4).png');
     background-repeat: no-repeat;
 }
 
 .bg-Group_18 {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     background-position: -10px -10px;
 }
 
+
 .bg-Subtract {
-    width: 36px;
-    height: 24px;
-    background-position: -62px -10px;
+    width: 48px;
+    height: 48px;
+    background-position: -78px -10px;
+
 }
 
 .bg-Subtract_1 {
-    width: 36px;
-    height: 24px;
-    background-position: -10px -62px;
+    width: 48px;
+    height: 48px;
+    background-position: -10px -78px;
 }
 
 .bg-Subtract_2 {
-    width: 36px;
-    height: 24px;
-    background-position: -118px -10px;
+    width: 48px;
+    height: 48px;
+    background-position: -78px -78px;
 }
 
 .bg-Vector {
-    width: 24px;
-    height: 24px;
-    background-position: -118px -54px;
+    width: 48px;
+    height: 48px;
+    background-position: -146px -78px;
 }
 
 .bg-Vector_1 {
-    width: 24px;
-    height: 24px;
-    background-position: -66px -62px;
+    width: 48px;
+    height: 48px;
+    background-position: -10px -146px;
 }
 
 .bg-Vector_2 {
-    width: 24px;
-    height: 24px;
-    background-position: -10px -106px;
+    width: 48px;
+    height: 48px;
+    background-position: -146px -10px;
 }
 </style>
