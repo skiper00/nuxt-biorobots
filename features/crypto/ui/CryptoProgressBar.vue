@@ -2,24 +2,24 @@
     <div class="crypto-container">
         <div class="section-content">
             <div class="coins-progress-bar flex flex-wrap">
-                <span v-for="i in visbleCoins" :key="i" class="-ml-[7px]" :style="{ zIndex: visbleCoins - i + 1 }">
+                <span v-for="i in gameStore.coins" :key="i" class="-ml-[7px]">
                     <NuxtImg class="w-4 mt-2" src="/Coin.png" />
                 </span>
             </div>
 
             <div class="count-coins mt-8 text-[#A3B8CC] text-2xl mb-6">
-                <span class="font-bold">{{ userCoins }}</span> biorobo
+                <span class="font-bold">{{ gameStore.coins }}</span> biorobo
                 монет
             </div>
 
             <div class="coin-controls flex items-start gap-[24px]">
                 <button
                     class="text-primary-orange text-base cursor-pointer transition hover:text-hover-button active:text-active-button"
-                    @click="addCoins(1)"><span
+                    @click="handleAddCoins"><span
                         class="underline decoration-solid decoration-primary-orange hover:decoration-hover-button active:decoration-active-button underline-offset-4">Нацыганить</span>
                 </button>
                 <label class="flex items-center space-x-2" for="check">
-                    <input id="check" type="checkbox" class="custom-checkbox hidden" />
+                    <input ref="checkboxRef" id="check" type="checkbox" class="custom-checkbox hidden" />
                     <span
                         class="custom-checkbox-label block w-6 h-6 bg-[#2A343A] border-2 border-[#A3B8CC] flex items-center justify-center text-transparent">
                         <span class="check-icon w-4 h-4">
@@ -30,20 +30,29 @@
                 </label>
             </div>
         </div>
-
     </div>
 </template>
 
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-const visbleCoins = 45;
+import { ref, computed } from 'vue';
+import { useInitialGame } from '@/store/game';
+import { useActionsStore } from '@/store/actions';
 
-const userCoins = ref(45);
+const gameStore = useInitialGame();
+const actionsStore = useActionsStore();
+const checkboxRef = ref<HTMLInputElement | null>(null);
 
-const addCoins = (amount: number) => {
-    userCoins.value += amount
+
+const handleAddCoins = () => {
+    const isChecked = checkboxRef.value?.checked
+    const amount = isChecked ? 5 : 1;
+    actionsStore.addCoins(amount)
 }
+
+
+
+
 </script>
 
 
